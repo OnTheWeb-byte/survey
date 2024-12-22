@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rate Me Survey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+        }
+        header{
+            color: aqua;
+        }
+        fieldset{
+            color: aqua;
+        }
+        p{
+            color: aqua;
+        }
+        button{
+            background-color: aqua;
+            color: black;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="https://www.centennialcollege.ca/" target="_blank">
+            
+        </a>
+        <h1>Course Evaluation Survey</h1>
+    </header>
+
+    
+    <main>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Course Information</legend>
+                <label for="course-name">Course Name:</label>
+                <input type="text" id="course-name" name="course-name" required>
+                
+                <label for="instructor-name">Instructor Name:</label>
+                <input type="text" id="instructor-name" name="instructor-name" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Evaluation Questions</legend>
+                <p>1. How would you rate the overall quality of the course?</p>
+                <label>
+                    <input type="radio" name="q1" value="Excellent" required> Excellent
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Good"> Good
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Fair"> Fair
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Poor"> Poor
+                </label>
+
+                <p>2. How effective was the instructor in delivering the course material?</p>
+                <label>
+                    <input type="radio" name="q2" value="Excellent" required> Excellent
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="Good"> Good
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="Fair"> Fair
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="Poor"> Poor
+                </label>
+
+                <p>3. How would you rate the learning resources provided?</p>
+                <label>
+                    <input type="radio" name="q3" value="Excellent" required> Excellent
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="Good"> Good
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="Fair"> Fair
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="Poor"> Poor
+                </label>
+
+                <p>4. Additional comments:</p>
+                <textarea name="comments" rows="5" placeholder="Write your comments here..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information (Optional)</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </fieldset>
+
+            <button type="submit">Submit Evaluation</button>
+        </form>
+    </main>
+    <footer>
+        <p>Visit our website: <a href="https://www.centennialcollege.ca/" target="_blank">Click Here</a></p>
+        <p>Email us: <a href="mailto:info@centennialcollege.ca">info@centennialcollege.ca</a></p>
+    </footer>
+</body>
+</html>
